@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="content">
+        <div class="header">
+            <h1>File Upload</h1>
+        </div>
+        <div class="row">
+            <div class="col-med-6"></div>
+            <div class="col-med-6">
+                <form enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="formFileLg" class="form-label">Seleccionar Archivo</label>
+                        <input class="form-control" id="formFileLg" type="file" (change)="onFileChange($event)" />
+                    </div>
+                    <button class="btn btn-outline-secondary" (click)="onUpload()">Subir</button>
+                </form>
+            </div>
+            <div class="col-med-6"></div>
+        </div>
+    </div>
+</div>
